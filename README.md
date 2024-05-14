@@ -12,4 +12,28 @@
 - MongoDb Methods
   - insertOne() - insert single record
   - insertMany() - insert multiple record
-  - 
+  - findOne() - get first  record of collection
+  - find({_id: '1212'}, { projection: _id: 0, title: 1 }) - Get all records (if condition added then filter data | projection: only specific columns return; )
+    - .sort({ name: 1 })  ( { name: 1 } // ascending { name: -1 } // descending )
+    - .limit(5)
+  - updateOne() - update record by condition
+  - updateMany() - update multiple records by condition
+  - deleteOne() - delete record by condition.
+  - deleteMany() - delete all record by condition
+  - db("mydb").collection("customers").drop(function(err, delOK) {}); // delete collecion
+  - Join Query :
+  ```
+  db.db("mydb").collection('orders').aggregate([{
+    $lookup: {
+      from: 'products',
+      localField: 'product_id',
+      foreignField: '_id',
+      as: 'orderdetails'
+    }
+  }
+  ]).toArray(function(err, res) {
+    if (err) throw err;
+    console.log(JSON.stringify(res));
+    db.close();
+  });
+  ```
