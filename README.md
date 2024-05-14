@@ -9,3 +9,7 @@
 - [Download MongoDb](https://www.mongodb.com/try/download/community)
 - [MongoDb GUI](https://www.mongodb.com/try/download/compass) (Easily explore and manipulate your database with Compass, the GUI for MongoDB.)
 - [Mongoose Example](https://blog.appsignal.com/2023/08/09/how-to-use-mongodb-and-mongoose-for-nodejs.html)
+- MongoDb Methods
+  - insertOne() - insert single record
+  - insertMany() - insert multiple record
+  - 
