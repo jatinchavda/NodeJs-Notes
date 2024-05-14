@@ -5,4 +5,6 @@
 - [Release Versions](https://docs.docker.com/desktop/release-notes/)
 
 ## Install MongoDb in Windows
+- [Docs](https://www.mongodb.com/docs/manual/introduction/)
 - [Download MongoDb](https://www.mongodb.com/try/download/community)
+- [MongoDb GUI](https://www.mongodb.com/try/download/compass) (Easily explore and manipulate your database with Compass, the GUI for MongoDB.)
